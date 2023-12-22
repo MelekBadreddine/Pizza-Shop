@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu Boisson</title>
+    <!-- Link Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!-- Your custom CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+        
+</head>
+<body>
+
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	    <div class="container">
+	        <a class="navbar-brand" href="#">Menu Boisson</a>
+	        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	            <span class="navbar-toggler-icon"></span>
+	        </button>
+	        <div class="collapse navbar-collapse" id="navbarNav">
+	            <ul class="navbar-nav ml-auto">
+	                <li class="nav-item">
+	                    <a class="nav-link" href="MenuPizza.html">Suivant</a>
+	                </li>
+	                <li class="nav-item">
+	                    <a class="nav-link" href="MenuPizza.html">Retour</a>
+	                </li>
+	            </ul>
+	        </div>
+	    </div>
+	</nav>
+
+    <div class="container">
+        <form action="http://localhost:8082/Project/Ajouter" method="post">
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" name="article" value="Soda" id="soda">
+                <label class="form-check-label" for="soda">
+                    <img src="images/soda.png" alt="Soda" class="rounded-circle" style="width: 50px; height: 50px;">
+                    Soda - $2.99
+                </label><br>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" name="article" value="Juice" id="juice">
+                <label class="form-check-label" for="juice">
+                    <img src="images/juice.png" alt="Juice" class="rounded-circle" style="width: 50px; height: 50px;">
+                    Juice - $3.99
+                </label><br>
+            </div>
+            <!-- Add other beverage options as checkboxes -->
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" name="article" value="Water" id="water">
+                <label class="form-check-label" for="water">
+                    <img src="images/water.png" alt="Water" class="rounded-circle" style="width: 50px; height: 50px;">
+                    Water - $1.99 <!-- Replace URL_TO_YOUR_WATER_IMAGE with the actual URL -->
+                </label><br>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" name="article" value="Smoothie" id="smoothie">
+                <label class="form-check-label" for="smoothie">
+                    <img src="images/smoothie.png" alt="Smoothie" class="rounded-circle" style="width: 50px; height: 50px;">
+                    Smoothie - $4.99 <!-- Replace URL_TO_YOUR_SMOOTHIE_IMAGE with the actual URL -->
+                </label><br>
+            </div>
+       <button type="submit" class="btn btn-primary">Ajouter</button>
+            <!-- Use buttons instead of submit inputs for better styling -->
+            <button type="submit" class="btn btn-secondary" formaction="MenuPizza.html">Suivant</button>
+            <button type="submit" class="btn btn-secondary" formaction="MenuPizza.html">Retour</button>
+            <button type="submit" class="btn btn-secondary" formaction="Affiche.jsp">Afficher ma commande</button>
+        </form>
+    </div>
+    
+    <!-- Footer -->
+	<footer>
+	    <p>&copy; 2023 Badreddine Melek & Abbes Cherif</p>
+	</footer>
+
+    <!-- Link Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

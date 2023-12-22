@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu Pizza</title>
+    <!-- Link Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!-- Your custom CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+        
+</head>
+<body>
+
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	    <div class="container">
+	        <a class="navbar-brand" href="#">Menu Pizza</a>
+	        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	            <span class="navbar-toggler-icon"></span>
+	        </button>
+	        <div class="collapse navbar-collapse" id="navbarNav">
+	            <ul class="navbar-nav ml-auto">
+	                <li class="nav-item">
+	                    <a class="nav-link" href="MenuBoisson.html">Suivant</a>
+	                </li>
+	                <li class="nav-item">
+	                    <a class="nav-link" href="MenuBoisson.html">Retour</a>
+	                </li>
+	            </ul>
+	        </div>
+	    </div>
+	</nav>
+
+    <div class="container">
+    <form action="http://localhost:8082/Project/Ajouter" method="post">
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" name="pizza" value="Margherita" id="margherita">
+            <label class="form-check-label" for="margherita">
+                <img src="images/margarita.png" alt="Margherita" class="rounded-circle" style="width: 50px; height: 50px;">
+                Margherita - $10.99
+            </label><br>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" name="pizza" value="Pepperoni" id="pepperoni">
+            <label class="form-check-label" for="pepperoni">
+                <img src="images/pepperoni.png" alt="Pepperoni" class="rounded-circle" style="width: 50px; height: 50px;">
+                Pepperoni - $12.99
+            </label><br>
+        </div>
+        <!-- Two new pizza options with circular images -->
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" name="pizza" value="Hawaiian" id="hawaiian">
+            <label class="form-check-label" for="hawaiian">
+                <img src="images/hawaiian.png" alt="Hawaiian" class="rounded-circle" style="width: 50px; height: 50px;">
+                Hawaiian - $11.99 <!-- Replace URL_TO_YOUR_HAWAIIAN_PIZZA_IMAGE with the actual URL -->
+            </label><br>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" name="pizza" value="Vegetarian" id="vegetarian">
+            <label class="form-check-label" for="vegetarian">
+                <img src="images/vegetarian.png" alt="Vegetarian" class="rounded-circle" style="width: 50px; height: 50px;">
+                Vegetarian - $13.99 <!-- Replace URL_TO_YOUR_VEGETARIAN_PIZZA_IMAGE with the actual URL -->
+            </label><br>
+        </div>
+
+            <!-- Add other pizza options as checkboxes -->
+
+            <button type="submit" class="btn btn-primary">Ajouter</button>
+            <!-- Use buttons instead of submit inputs for better styling -->
+            <button type="submit" class="btn btn-secondary" formaction="MenuBoisson.html">Suivant</button>
+            <button type="submit" class="btn btn-secondary" formaction="MenuBoisson.html">Retour</button>
+            <button type="submit" class="btn btn-secondary" formaction="Affiche.jsp">Afficher ma commande</button>
+        </form>
+    </div>
+    
+
+    <!-- Link Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
